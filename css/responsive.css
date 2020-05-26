@@ -3,14 +3,18 @@
 /* Screens Resolution : 992px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-
+	body {
+		/* The file size of this background image is 93% smaller
+			 to improve page load speed on mobile internet connections */
+		background-image: url(images/FBcover.png);
+	}
 }
 
 /* Screens Resolution : 992px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
-	
-	
+
+
 
 }
 
@@ -18,7 +22,8 @@
 /* Screens Resolution : 767px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-	
+
+
 	/* ---------------------------------
 	1. PRIMARY STYLES
 	--------------------------------- */
@@ -28,9 +33,9 @@
 	h1{ font-size: 2.8em; line-height: 1; }
 	h2{ font-size: 2.2em; line-height: 1.1; }
 	h3{ font-size: 1.8em; }
-		
-	
-	
+
+
+
 }
 
 /* Screens Resolution : 479px
@@ -42,19 +47,19 @@
 	--------------------------------- */
 
 	body{ font-size: 12px; }
-	
+
 }
 
 /* Screens Resolution : 359px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 359px) {
-	
-	
+
+
 }
 
 /* Screens Resolution : 290px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 290px) {
-	
-	
+
+
 }
