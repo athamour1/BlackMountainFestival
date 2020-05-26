@@ -109,26 +109,91 @@ b.light-color{ color: #444; }
 /* ---------------------------------
 3. MAIN SECTION
 --------------------------------- */
-
-.main-area{ position: relative; height: 100vh; z-index: 1; padding: 0 20px; background-size: cover; color: #fff; }
-
-.main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;
-	opacity: .4; background: #000; }
-
-.main-area .desc{ margin: 20px auto; max-width: 500px; }
-
-.main-area .notify-btn{ padding: 13px 35px; border-radius: 50px; border: 2px solid #F84982;
-	color: #fff; background: #F84982; }
-
-.main-area .notify-btn:hover{ background: none; }
-
-.main-area .social-btn{ position: absolute; bottom: 40px; width: 100%; left: 50%; transform: translateX(-50%); }
-
-.main-area .social-btn > li > a{ margin: 0 10px; padding-bottom: 7px; position: relative; overflow: hidden; }
-
-.main-area .social-btn > li > a:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0;
-	transition: all .2s; height: 2px; background: #F84982; }
-
-
-.main-area .social-btn > li > a:hover:after{ transform: translateX(100%); }
+@media only screen and (max-width: 1000px) 
+{
+	.main-area
+	{ 
+		position: relative; 
+		height: 100vh; 
+		z-index: 1; 
+		padding: 0 20px; 
+		color: #fff; 
+		/*background-color: teal;*/ 
+		background-color: black;		
+		background-image:url("../images/poster_bot_2.png"), url("../images/poster_up_2.png");
+		background-position: bottom, top;
+		background-repeat: no-repeat, no-repeat;
+		background-size: 99%, 99%, 99%, 99%;
+	}
 }
+
+@media only screen and (min-width: 1001px) 
+{
+	.main-area
+	{ 
+		position: relative; 
+		height: 100vh; 
+		z-index: 1; 
+		padding: 0 20px; 
+		color: #fff;  	
+		background-color: black;		
+		background-image:url("../images/FBcover.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 99%, 99%;
+	}
+}
+.main-area:after
+{ 
+	content:''; 
+	position: absolute; 
+	top: 0; 
+	bottom: 0;
+	left: 0; 
+	right: 0; 
+	z-index: -1;
+	opacity: .4; 
+	background: #000; 
+}
+
+.main-area .desc
+{ 
+	margin: 20px auto; 
+	max-width: 500px; 
+}
+
+.main-area .social-btn
+{ 
+	position: absolute; 
+	bottom: 20px; 
+	width: 100%; 
+	left: 50%; 
+	transform: translateX(-50%); 
+}
+
+.main-area .social-btn > li > a
+{ 
+	margin: 0 10px; 
+	padding-bottom: 7px; 
+	position: relative; 
+	overflow: hidden; 
+}
+
+.main-area .social-btn > li > a:after
+{ 
+	content:''; 
+	position: absolute; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	transition: all .2s; 
+	height: 2px; 
+	background: #e7d62b; 
+}
+
+
+.main-area .social-btn > li > a:hover:after
+{ 
+	transform: translateX(100%); 
+}
+

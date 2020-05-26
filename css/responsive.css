@@ -6,7 +6,7 @@
 	body {
 		/* The file size of this background image is 93% smaller
 			 to improve page load speed on mobile internet connections */
-		background-image: url(images/poster.png);
+		background-image: url("../images/poster.png");
 	}
 }
 
@@ -14,7 +14,18 @@
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
 
-
+	.main-area{ 
+		position: relative; 
+		height: 100vh; 
+		z-index: 1; 
+		padding: 0 20px; 
+		color: #fff; 
+		background-color: black; 
+		background-image:url("../images/poster.png"); 
+		background-position: top; 
+		background-repeat: no-repeat; 
+		background-size: 900px, 90%;
+	}
 
 }
 
@@ -34,6 +45,18 @@
 	h2{ font-size: 2.2em; line-height: 1.1; }
 	h3{ font-size: 1.8em; }
 
+	.main-area{ 
+		position: relative; 
+		height: 100vh; 
+		z-index: 1; 
+		padding: 0 20px; 
+		color: #fff; 
+		background-color: black; 
+		background-image:url("../images/poster.png"); 
+		background-position: top; 
+		background-repeat: no-repeat; 
+		background-size: 90%, 90%;
+	}
 
 
 }
